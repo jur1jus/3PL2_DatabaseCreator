@@ -52,6 +52,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Laukas.cs" />
     <Compile Include="Lentelės.cs">
       <SubType>Form</SubType>
     </Compile>

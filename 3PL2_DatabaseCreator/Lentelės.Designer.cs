@@ -76,10 +76,17 @@ namespace _3PL2_DatabaseCreator
 			// cmbxLaukoTipas
 			// 
 			this.cmbxLaukoTipas.FormattingEnabled = true;
+			this.cmbxLaukoTipas.Items.AddRange(new object[] {
+            "",
+            "int",
+            "varchar",
+            "datetime",
+            "double"});
 			this.cmbxLaukoTipas.Location = new System.Drawing.Point(127, 59);
 			this.cmbxLaukoTipas.Name = "cmbxLaukoTipas";
 			this.cmbxLaukoTipas.Size = new System.Drawing.Size(121, 21);
 			this.cmbxLaukoTipas.TabIndex = 4;
+			this.cmbxLaukoTipas.SelectedIndexChanged += new System.EventHandler(this.cmbxLaukoTipas_SelectedIndexChanged);
 			// 
 			// label3
 			// 
@@ -115,6 +122,7 @@ namespace _3PL2_DatabaseCreator
 			this.btnPridėti.TabIndex = 8;
 			this.btnPridėti.Text = "Pridėti";
 			this.btnPridėti.UseVisualStyleBackColor = true;
+			this.btnPridėti.Click += new System.EventHandler(this.btnPridėti_Click);
 			// 
 			// listBoxLaukai
 			// 
@@ -123,6 +131,7 @@ namespace _3PL2_DatabaseCreator
 			this.listBoxLaukai.Name = "listBoxLaukai";
 			this.listBoxLaukai.Size = new System.Drawing.Size(274, 212);
 			this.listBoxLaukai.TabIndex = 9;
+			this.listBoxLaukai.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listBoxLaukai_KeyUp);
 			// 
 			// btnGeneruoti
 			// 
@@ -132,6 +141,7 @@ namespace _3PL2_DatabaseCreator
 			this.btnGeneruoti.TabIndex = 10;
 			this.btnGeneruoti.Text = "Generuoti";
 			this.btnGeneruoti.UseVisualStyleBackColor = true;
+			this.btnGeneruoti.Click += new System.EventHandler(this.btnGeneruoti_Click);
 			// 
 			// Lentelės
 			// 
